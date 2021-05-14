@@ -54,7 +54,7 @@ let mapleader = ","
 " seoul256 (dark):
 " "   Range:   233 (darkest) ~ 239 (lightest)
 " "   Default: 237
-let g:seoul256_background = 240
+let g:seoul256_background = 233
 colo seoul256
 
 
@@ -169,7 +169,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
-nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
 cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['c', 'cpp', 'py'],'passive_filetypes': [] }
@@ -243,9 +242,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 " hi IndentGuidesOdd  ctermbg=white
 " hi IndentGuidesEven ctermbg=lightgrey
 
-
-nnoremap <F2> :w
-map <F3> :NERDTreeToggle<cr>
+map <F2> :NERDTreeToggle<cr>
+nnoremap <F3> :set invnumber<cr>
+set pastetoggle=<F4>
 nnoremap <C-f> :NERDTreeFind<cr>
 
 " buffer 관련 map
@@ -259,4 +258,4 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-
+let NERDTreeWinSize = 35
