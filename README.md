@@ -1,4 +1,4 @@
-# yonghyuk's vimrc
+# Eunwoo's vimrc
 
 ## 설치
 
