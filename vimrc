@@ -249,13 +249,11 @@ nnoremap <C-f> :NERDTreeFind<cr>
 
 " buffer 관련 map
 noremap <silent> <C-left> :bprev<CR>
-noremap <silent> <C-h> :bprev<C<F2>R>
+noremap <silent> <C-h> :bprev<CR>
 noremap <silent> <C-right> :bnext<CR>
 noremap <silent> <C-l> :bnext<CR>
 
 
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 let NERDTreeWinSize = 35
