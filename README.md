@@ -4,7 +4,7 @@
 
 ```bash
 cd ~/
-git clone https://github.com/dbdydgur2244/vim-setting .vim
+git clone https://github.com/sinunu/vim-setting.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
 vim -c ":PlugInstall" -c ":q" -c ":q"
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
